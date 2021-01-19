@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Video Task</title>
+    </head>
+    <body>
+        <video src="./assets/frozen.mp4" width="600px" height="400px" id="vid">
+            Your Browser doesn't support this type of files
+        </video>
+
+        <div>
+          <input type="range" style="width: 600px" value='0' min='0' max='100' id='vidtime'>
+            <label id='curr'>00:00</label>/<label id='total'>00:00</label>
+        </div>
+        <div>
+            <input type="button" value="Play" id="plbtn">
+            <input type="button" value="Stop" id="stpbtn">
+            <input type="button" value="<<" id="rewind">
+            <input type="button" value="<" id="slow" >
+            <input type="button" value=">" id="fast">
+            <input type="button" value=">>" id="skip">
+            <input type="range"  style="width: 100px"  min='0' max='10' value='10' id='sound'>
+            <input type="button" value= "Mute" id="Mute" >
+        </div>
+        Speed <input type="range" style="width: 100px" value='1' min='1' max='16' id='speed'>
+        <script src="vid.js"></script>
+    </body>
+</html>
